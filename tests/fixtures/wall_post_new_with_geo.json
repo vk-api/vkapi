@@ -1,0 +1,39 @@
+{
+    "type": "wall_post_new",
+    "object": {
+        "id": 36,
+        "from_id": -78441729,
+        "owner_id": -78441729,
+        "date": 1643996401,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "(alternatives) и /usr/bin/php является символической ссылкой (sym (alternatives) и /usr/bin/php является символической ссылкой (sym",
+        "signer_id": 11412368,
+        "can_edit": 1,
+        "created_by": 11412368,
+        "can_delete": 1,
+        "geo": {
+            "type": "point",
+            "coordinates": "55.171233202864 61.433932747947",
+            "place": {
+                "id": 0,
+                "title": "Артиллерийская улица, Челябинск",
+                "latitude": 0,
+                "longitude": 0,
+                "created": 0,
+                "icon": "https://vk.com/images/places/place.png",
+                "country": "Россия",
+                "city": "Челябинск"
+            },
+            "showmap": 1
+        },
+        "comments": {
+            "count": 0
+        },
+        "is_favorite": false,
+        "hash": "2QKbTMOSboduMc0UkaBM3IgQ2mE"
+    },
+    "group_id": 78441729,
+    "event_id": "3520030806ab05934a7d7305bc45e1b5d42ccde6",
+    "secret": "law3xcx1"
+}
