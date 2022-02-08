@@ -1,0 +1,20 @@
+{
+    "type": "wall_reply_new",
+    "object": {
+        "id": 50,
+        "from_id": 11412368,
+        "date": 1644331511,
+        "text": "[id11412368|Константин], Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "post_id": 47,
+        "owner_id": -78441729,
+        "parents_stack": [
+            48
+        ],
+        "reply_to_user": 11412368,
+        "reply_to_comment": 49,
+        "post_owner_id": -78441729
+    },
+    "group_id": 78441729,
+    "event_id": "9183d109ea0d62fa892f784081d783b1ed1c0757",
+    "secret": "law3xcx1"
+}

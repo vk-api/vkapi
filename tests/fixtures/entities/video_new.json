@@ -1,0 +1,31 @@
+{
+  "type": "video_new",
+  "object": {
+    "can_edit": 1,
+    "can_add": 1,
+    "can_attach_link": 1,
+    "comments": 0,
+    "date": 1643617926,
+    "description": "Это description видеоролика",
+    "duration": 20,
+    "photo_130": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=39&tkn=yyGWkrWD-m0o1xe5Ylrh1Xk3oJ8&fn=vid_s",
+    "photo_320": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=39&tkn=yyGWkrWD-m0o1xe5Ylrh1Xk3oJ8&fn=vid_l",
+    "photo_800": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=39&tkn=yyGWkrWD-m0o1xe5Ylrh1Xk3oJ8&fn=vid_x",
+    "photo_1280": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=39&tkn=yyGWkrWD-m0o1xe5Ylrh1Xk3oJ8&fn=vid_w",
+    "first_frame_130": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=35&tkn=GwmnfyhMPDiBEcZ0CYA14Jl_g3o",
+    "first_frame_160": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=34&tkn=ir0RScOyxeAdrNx_6QuNmNSfQu0",
+    "first_frame_320": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=33&tkn=oLIbLuSO4N6-yx-MlInaTHLKYpU",
+    "first_frame_800": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=32&tkn=rfml38aePMjXRgEul9dGfgpB2XU",
+    "first_frame_1280": "https://i.mycdn.me/getVideoPreview?id=863288625746&idx=0&type=39&tkn=yyGWkrWD-m0o1xe5Ylrh1Xk3oJ8",
+    "width": 320,
+    "height": 240,
+    "id": 456239021,
+    "owner_id": -123611341,
+    "title": "240(1)",
+    "is_favorite": false,
+    "views": 1
+  },
+  "group_id": 123611341,
+  "event_id": "5ac745a304f74324ff27e501d28547850eba2eab",
+  "secret": "law3xcx4"
+}

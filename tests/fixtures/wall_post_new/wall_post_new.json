@@ -1,0 +1,23 @@
+{
+    "type": "wall_post_new",
+    "object": {
+        "id": 25,
+        "from_id": -78441729,
+        "owner_id": -78441729,
+        "date": 1643806118,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "can_edit": 1,
+        "created_by": 11412368,
+        "can_delete": 1,
+        "comments": {
+            "count": 0
+        },
+        "is_favorite": false,
+        "hash": "8roWJtocDu70kEpzGmFW2b5VQ4Q"
+    },
+    "group_id": 78441729,
+    "event_id": "c0984f16e39c98b428160ec4ad2ce3fdef5c46cd",
+    "secret": "law3xcx1"
+}
