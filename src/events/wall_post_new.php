@@ -2,54 +2,28 @@
 
 namespace Vkapi\events\event;
 
-use function Vkapi\parsers\object\{
-    getDate,
-    getCreatedBy,
-    getFromId,
-    getOwnerId,
-    getText,
-    getId,
-    getAlbumId,
-    getUserId,
-    getAttachments,
-    getSignerId,
-    getDuration,
-    getTitle,
-    getFirstFrame,
-    getPhoto,
-    getHeight,
-    getWidth,
-    getGeo
-};
-use function Vkapi\build\buildvalues\buildHashTags;
-use function Vkapi\parsers\root\{getType, getGroupId, getEventId};
-use function Vkapi\parsers\video\{getAccessKey, getAddingDate, getDescription,
-    getPlatform, getPlayer, getTypeVideo, getVideo};
-use function Vkapi\parsers\post\{getPostType};
-use function Vkapi\parsers\audio\{getArtist, getUrl, getLyricsId, getGenreId,
-    getIsHq};
-use function Vkapi\parsers\photo\{getSizes};
+use function Vkapi\parser\{getAttachments, getValue, getGeo};
 
 function wall_post_new($data)
 {
     return [
-        "type" => getType($data),
-        "id" => getId($data),
-        "from_id" => getFromId($data),
-        "owner_id" => getOwnerId($data),
-        "date" => getDate($data),
-        "post_type" => getPostType($data),
-        "text" => getText($data),
-        "created_by" => getCreatedBy($data),
-        "signer_id" => getSignerId($data),
+        "type" => getValue($data, ['type']),
+        "id" => getValue($data, ['object', 'id']),
+        "from_id" => getValue($data, ['object', 'from_id']),
+        "owner_id" => getValue($data, ['object', 'owner_id']),
+        "date" => getValue($data, ['object', 'date']),
+        "post_type" => getValue($data, ['object', 'post_type']),
+        "text" => getValue($data, ['object', 'text']),
+        "created_by" => getValue($data, ['object', 'created_by']),
+        "signer_id" => getValue($data, ['object', 'signer_id']),
+        "geo" => getGeo($data),
         "audio" => getAttachments($data, "audio"),
         "video" => getAttachments($data, "video"),
         "photo" => getAttachments($data, 'photo'),
-        "geo" => getGeo($data),
         "poll" => getAttachments($data, 'poll'),
         "link" => getAttachments($data, 'link'),
-        "group_id" => getGroupId($data),
-        "event_id" => getEventId($data),
-        "hash_tags" => buildHashTags($data)
+        "doc" => getAttachments($data, 'doc'),
+        "group_id" => getValue($data, ['group_id']),
+        "event_id" => getValue($data, ['event_id'])
     ];
 }

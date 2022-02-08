@@ -7,14 +7,15 @@ use function Vkapi\parsers\object\getText;
 
 function buildMessage($data, $case)
 {
-    $url = 'https://vk.com/wall-' . $data->group_id . '_' . $data->object->post_id . "?reply=" . $data->object->id;
+    $text = $data['object']['text'];
+    $group_id = $data['group_id'];
+    $post_id = $data['object']['post_id'];
+    $id = $data['object']['id'];
+    $thread = isset($data['object']['reply_to_comment']) ? "&thread={$data['object']['reply_to_comment']}" : '';
+    $from_id = $data['object']['from_id'];
 
-    if (isset($data->object->reply_to_comment)) {
-        $thread = $data->object->reply_to_comment;
-        $url = $url . "&thread=" . $thread;
-    }
-
-    $message = $data->object->text . $case . $url . "к посту https://vk.com/wall-56308476_" . $data->object->post_id . ", автор коммента https://vk.com/id" . $data->object->from_id . "\n*******";
+    $message = "{$text} {$case} https://vk.com/wall-{$group_id}_{$post_id}?reply={$id}{$thread} к посту 
+                https://vk.com/wall-56308476_{$post_id}, автор коммента https://vk.com/id {$from_id}\n\n";
 
     return $message;
 }

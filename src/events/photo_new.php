@@ -2,49 +2,20 @@
 
 namespace Vkapi\events\event;
 
-use function Vkapi\parsers\object\{
-    getDate,
-    getCreatedBy,
-    getFromId,
-    getOwnerId,
-    getText,
-    getId,
-    getAlbumId,
-    getUserId,
-    getAttachments,
-    getSignerId,
-    getDuration,
-    getTitle,
-    getFirstFrame,
-    getPhoto,
-    getHeight,
-    getWidth
-};
-use function Vkapi\build\buildvalues\buildHashTags;
-use function Vkapi\parsers\root\{getType, getGroupId, getEventId, getValue};
-use function Vkapi\parsers\video\{getAccessKey, getAddingDate, getDescription,
-    getPlatform, getPlayer, getTypeVideo, getVideo};
-use function Vkapi\parsers\post\{getPostType};
-use function Vkapi\parsers\audio\{getArtist, getUrl, getLyricsId, getGenreId,
-    getIsHq};
-use function Vkapi\parsers\photo\{getSizes};
+use function Vkapi\parser\{getValue, getSizes};
 
 function photo_new($data)
 {
-    $type = getType($data) == 'photo' ? 'photo' : 'object';
-    var_dump($type);
-
-    $type2 = getValue($data, ['type']) == 'photo' ? 'photo' : 'object';
-    var_dump($type2);
+    $type = $data['type'] == 'photo' ? 'photo' : 'object';
 
     return [
-        "type" => getType($data, $type),
-        "id" => getId($data, $type),
-        "album_id" => getAlbumId($data, $type),
-        "owner_id" => getOwnerId($data, $type),
-        "user_id" => getUserId($data),
-        "text" => getText($data, $type),
-        "date" => getDate($data, $type),
-        "image" => getSizes($data, $type)
+        "type" => getValue($data, ['type']),
+        "id" => getValue($data, [$type, 'id']),
+        "album_id" => getValue($data, [$type, 'album_id']),
+        "owner_id" => getValue($data, [$type, 'owner_id']),
+        "user_id" => getValue($data, [$type, 'user_id']),
+        "text" => getValue($data, [$type, 'text']),
+        "date" => getValue($data, [$type, 'date']),
+        "image" => getSizes($data)
     ];
 }

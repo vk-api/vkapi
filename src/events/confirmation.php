@@ -2,36 +2,25 @@
 
 namespace Vkapi\events\event;
 
-use function Vkapi\parsers\object\{
-    getDate,
-    getCreatedBy,
-    getFromId,
-    getOwnerId,
-    getText,
-    getId,
-    getAlbumId,
-    getUserId,
-    getAttachments,
-    getSignerId,
-    getDuration,
-    getTitle,
-    getFirstFrame,
-    getPhoto,
-    getHeight,
-    getWidth
-};
-use function Vkapi\build\buildvalues\buildHashTags;
-use function Vkapi\parsers\root\{getType, getGroupId, getEventId};
-use function Vkapi\parsers\video\{getAccessKey, getAddingDate, getDescription,
-    getPlatform, getPlayer, getTypeVideo, getVideo};
-use function Vkapi\parsers\post\{getPostType};
-use function Vkapi\parsers\audio\{getArtist, getUrl, getLyricsId, getGenreId,
-    getIsHq};
-use function Vkapi\parsers\photo\{getSizes};
-
-function confirmation($data = "")
+function confirmation($input)
 {
-    $dotenv = new \Symfony\Component\Dotenv\Dotenv();
-    $dotenv->load(dirname(__DIR__, 1) . '/.env', dirname(__DIR__, 1) . '/.env.dev');
-    echo $_ENV["CONFIRMATION_TOKEN"];
+    //var_dump($input);
+    //var_dump($_ENV);
+
+    echo $input[0][0];
+
+
+    // if ($data->group_id == '78441729' && $data->secret == 'law3xcx1') {
+    //     echo '9c6fe3c4';
+    // } elseif ($data->group_id == '31121976' && $data->secret == 'law3xcx2') {
+    //     echo '00649f2e';
+    // } elseif ($data->group_id == '92451271' && $data->secret == 'law3xcx3') {
+    //     echo 'c2e344f2';
+    // } elseif ($data->group_id == '123611341' && $data->secret == 'law3xcx4') {
+    //     echo 'b940083f';
+    // }
+    // break;
+
+
 }
+
