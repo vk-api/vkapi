@@ -9,28 +9,34 @@
     },
     "files": [
       "src/readinput.php",
+      "src/env.php",
+      
       "src/buildvalues/messages.php",
       "src/buildvalues/tags.php",
       "src/buildvalues/users.php",
       "src/buildvalues/video.php",
-      "src/events/link.php",
-      "src/events/audio_new.php",
+      
       "src/events/confirmation.php",
+      "src/events/wall_post_new.php",
+      "src/events/audio_new.php",
       "src/events/photo_new.php",
       "src/events/video_new.php",
-      "src/events/wall_post_new.php",
-      "src/events/wall_reply.php",
-      "src/events/poll.php",
-      "src/parsers/audio.php",
-      "src/parsers/video.php",
-      "src/parsers/photo.php",
-      "src/parsers/post.php",
-      "src/parsers/object.php",
-      "src/parsers/root.php",
-      "src/parsers/link.php",
+
+      "src/events/reply/wall_reply_delete.php",
+      "src/events/reply/wall_reply_edit.php",
+      "src/events/reply/wall_reply_new.php",
+      "src/events/reply/wall_reply_restore.php",
+
+      "src/events/entities/link.php",
+      "src/events/entities/poll.php",
+      "src/events/entities/doc.php",
+
+      "src/parser/parser.php",
+      
       "src/requests/messages.php",
       "src/requests/users.php",
       "src/requests/video.php",
+      
       "src/responses/messages.php",
       "src/responses/users.php",
       "src/responses/video.php"

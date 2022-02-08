@@ -1,5 +1,6 @@
 setup:
 	composer install
+	make env
 
 test:
 	composer run-script phpunit tests
@@ -13,8 +14,11 @@ lint:
 lint-fix:
 	composer run-script phpcbf -- --standard=PSR12 src tests
 
-install:
-	composer install
+env:
+	touch .env || true
+
+env-prepare:
+	cp -n .env.example .env || true
 
 cu:
 	composer update
