@@ -1,113 +1,226 @@
 {
   "type": "wall_post_new",
   "object": {
-    "id": 38,
-    "from_id": -78441729,
-    "owner_id": -78441729,
-    "date": 1644001532,
-    "marked_as_ads": 0,
-    "post_type": "post",
-    "text": "наш комментарий",
-    "copy_history": [
-      {
-        "id": 27092,
-        "owner_id": -32017543,
-        "from_id": -32017543,
-        "date": 1643900434,
-        "post_type": "post",
-        "text": "Аудит доступности: основы. Как узнать, что есть проблемы, оценить критичность и начать улучшение доступности проекта. Татьяна Фокина и Василий Дудин в первой части серии про само понятие аудита доступности и как он может быть устроен.\n\nhttps://web-standards.ru/articles/a11y-audit-basics/",
-        "attachments": [
+      "id": 67,
+      "from_id": -78441729,
+      "owner_id": -78441729,
+      "date": 1645257558,
+      "marked_as_ads": 0,
+      "post_type": "post",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "copy_history": [
           {
-            "type": "photo",
-            "photo": {
-              "album_id": -7,
-              "date": 1643900434,
-              "id": 457247729,
-              "owner_id": -32017543,
-              "access_key": "957cdff2f490c141d8",
-              "post_id": 27092,
-              "sizes": [
-                {
-                  "height": 68,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=130x68&quality=96&sign=0a03eac1cd0e31446ab90362c7bc2a50&c_uniq_tag=J7uVnanZ3cwx_lX__2Rg4xEZZ9MfzA2jYvvYEQrVXNg&type=album",
-                  "type": "m",
-                  "width": 130
-                },
-                {
-                  "height": 87,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=130x87&quality=96&crop=160,0,1167,781&sign=8a67f6b21280e7549a7e5bf6de9c3fa2&c_uniq_tag=jyY_C10HQRcivwOd1iUI9LWp0Q75tQDjstEqOxV_9no&type=album",
-                  "type": "o",
-                  "width": 130
-                },
-                {
-                  "height": 133,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=200x133&quality=96&crop=156,0,1174,781&sign=04f073aea57a1f0b05620af7ede5ff5f&c_uniq_tag=u8sYnE_mT6eIieqhHH859wPXrQm1IZItasqC4ZnkBU4&type=album",
-                  "type": "p",
-                  "width": 200
-                },
-                {
-                  "height": 213,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=320x213&quality=96&crop=157,0,1173,781&sign=1f5b0448067885850ea244459b4d5b2a&c_uniq_tag=npQW-m0njiQGtNTEXkF0pffuzjw13vBPQIvE_aOMnuE&type=album",
-                  "type": "q",
-                  "width": 320
-                },
-                {
-                  "height": 340,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=510x340&quality=96&crop=158,0,1171,781&sign=719a4a734ec53d79ccc661503d44fb70&c_uniq_tag=LhnhBTFD8_frOPkcMtb0a-7WxTw0XoW_RoK4pjU6Rrc&type=album",
-                  "type": "r",
-                  "width": 510
-                },
-                {
-                  "height": 39,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=75x39&quality=96&sign=21a5d1f1c582fc26f9717a73fe085842&c_uniq_tag=QQNKwZnaDOh7ZfNYXaecvzdkfISxzwll2iXpNZdPiBo&type=album",
-                  "type": "s",
-                  "width": 75
-                },
-                {
-                  "height": 781,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=1487x781&quality=96&sign=08abd408886ff4d657ff34ea76fdb544&c_uniq_tag=JXViuW2gGmdBl9qwNhdCuyfdn3x67cvcvv3H1EbdPNY&type=album",
-                  "type": "w",
-                  "width": 1487
-                },
-                {
-                  "height": 317,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=604x317&quality=96&sign=869516190b63ff159ce234d35cb16941&c_uniq_tag=Grz3uzprEOGqtImSM0lrg1mUpAbIw4a4n_U73NEYA1Y&type=album",
-                  "type": "x",
-                  "width": 604
-                },
-                {
-                  "height": 424,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=807x424&quality=96&sign=a293a480383de75fd811841c667e7dbb&c_uniq_tag=J622n0XPnKBqHLVTKQVHcDOWrqJw1tk5Q8LLFjMzZcg&type=album",
-                  "type": "y",
-                  "width": 807
-                },
-                {
-                  "height": 672,
-                  "url": "https://sun9-39.userapi.com/impg/fdcgC3CfvAg_ow2G1nbA2cBP05YBh-dS6Qs5SQ/xDZKv4uoJuM.jpg?size=1280x672&quality=96&sign=27a45b67a4ac0fb9c33435f7444fceba&c_uniq_tag=s2FG8euw8cDkWfT6MbVMEQ0XFrbU9WmFlDleIDYW_Qg&type=album",
-                  "type": "z",
-                  "width": 1280
-                }
+              "id": 27,
+              "owner_id": -31121976,
+              "from_id": -31121976,
+              "date": 1645257546,
+              "post_type": "post",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "attachments": [
+                  {
+                      "type": "photo",
+                      "photo": {
+                          "album_id": -7,
+                          "date": 1645257546,
+                          "id": 457239025,
+                          "owner_id": -31121976,
+                          "access_key": "89b57e2b2789cb1d89",
+                          "post_id": 27,
+                          "sizes": [
+                              {
+                                  "height": 52,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=75x52&quality=95&sign=d025d8e2c39614234d91cb33fb76ed3c&c_uniq_tag=rAz3VKMq4kM5ZC3CFN4XCWXAbl1yfupO3l4tX9v8kz8&type=album",
+                                  "type": "s",
+                                  "width": 75
+                              },
+                              {
+                                  "height": 90,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=130x90&quality=95&sign=43b2a8caedaa889d6164475b26a97556&c_uniq_tag=Pq2uFl4cpYiqFR5GG8udqQJoGGIwSnjWMjitGLJZMc0&type=album",
+                                  "type": "m",
+                                  "width": 130
+                              },
+                              {
+                                  "height": 419,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=604x419&quality=95&sign=f815fda5a67187361139cb0fdc8c2532&c_uniq_tag=-_E3vT5GmQSWQ3e3d_WXxaqrLAl7dr417xxYXKEIQWk&type=album",
+                                  "type": "x",
+                                  "width": 604
+                              },
+                              {
+                                  "height": 486,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=700x486&quality=95&sign=5526491b3377f9cfc1aa101162932471&c_uniq_tag=E_TuH-zhqr98NCVbfsK4e3CR-zO2ZlpFBWNn5lEwzQM&type=album",
+                                  "type": "y",
+                                  "width": 700
+                              },
+                              {
+                                  "height": 90,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=130x90&quality=95&sign=43b2a8caedaa889d6164475b26a97556&c_uniq_tag=Pq2uFl4cpYiqFR5GG8udqQJoGGIwSnjWMjitGLJZMc0&type=album",
+                                  "type": "o",
+                                  "width": 130
+                              },
+                              {
+                                  "height": 139,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=200x139&quality=95&sign=c9df01377b562ffcfc636929fd552563&c_uniq_tag=PvQX4iXpVbg6xLd_sqCCzldOmIapUc77F6kR-qyddeo&type=album",
+                                  "type": "p",
+                                  "width": 200
+                              },
+                              {
+                                  "height": 222,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=320x222&quality=95&sign=0aa7eba0152b544f6deb0f589ef109b9&c_uniq_tag=rcC8ZLsJ3AL3-okLWA_GYLhafkB_5KiDh0OISSG0LUY&type=album",
+                                  "type": "q",
+                                  "width": 320
+                              },
+                              {
+                                  "height": 354,
+                                  "url": "https://sun9-74.userapi.com/impg/z7zr4jeIF7JFeAfUQVxzHca264k6ZRBHnC8qyg/vH36KVXige0.jpg?size=510x354&quality=95&sign=a52037d1c621d40c900a2106ca9a6faf&c_uniq_tag=ptshFv8-Wo2kMWYfQE0q4a3pYpWJy-en7DfX5p9GBmE&type=album",
+                                  "type": "r",
+                                  "width": 510
+                              }
+                          ],
+                          "text": "",
+                          "user_id": 100,
+                          "has_tags": false
+                      }
+                  },
+                  {
+                      "type": "video",
+                      "video": {
+                          "access_key": "bdd766fc9ae3452244",
+                          "can_comment": 1,
+                          "can_edit": 1,
+                          "can_like": 1,
+                          "can_repost": 1,
+                          "can_subscribe": 1,
+                          "can_add_to_faves": 1,
+                          "can_add": 1,
+                          "can_attach_link": 1,
+                          "comments": 0,
+                          "date": 1645257531,
+                          "description": "",
+                          "duration": 16,
+                          "image": [
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=8&type=39&tkn=Xz4p8oRgiG5XtLlkLlx_NxEzP7w&fn=vid_s",
+                                  "width": 130,
+                                  "height": 96,
+                                  "with_padding": 1
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=8&type=39&tkn=Xz4p8oRgiG5XtLlkLlx_NxEzP7w&fn=vid_m",
+                                  "width": 160,
+                                  "height": 120,
+                                  "with_padding": 1
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=8&type=39&tkn=Xz4p8oRgiG5XtLlkLlx_NxEzP7w&fn=vid_l",
+                                  "width": 320,
+                                  "height": 240,
+                                  "with_padding": 1
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=8&type=39&tkn=Xz4p8oRgiG5XtLlkLlx_NxEzP7w&fn=vid_x",
+                                  "width": 800,
+                                  "height": 450,
+                                  "with_padding": 1
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=8&type=39&tkn=Xz4p8oRgiG5XtLlkLlx_NxEzP7w&fn=vid_w",
+                                  "width": 960,
+                                  "height": 720
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=8&type=39&tkn=Xz4p8oRgiG5XtLlkLlx_NxEzP7w&fn=vid_t",
+                                  "width": 320,
+                                  "height": 240
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=8&type=39&tkn=Xz4p8oRgiG5XtLlkLlx_NxEzP7w&fn=vid_u",
+                                  "width": 720,
+                                  "height": 540
+                              }
+                          ],
+                          "first_frame": [
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=0&type=32&tkn=nwhS1IfDnX9cvg6BnKjNThvlPhs",
+                                  "width": 720,
+                                  "height": 540
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=0&type=33&tkn=9A9VEyfmCXkZWZwByAtx1iDR6Kc",
+                                  "width": 480,
+                                  "height": 360
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=0&type=34&tkn=AqcHYxFVgXyhYln-kv0AP7iayr8",
+                                  "width": 240,
+                                  "height": 180
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=0&type=35&tkn=82JacUQxMvM8q78B-VX8_ZZyqzs",
+                                  "width": 128,
+                                  "height": 96
+                              },
+                              {
+                                  "url": "https://i.mycdn.me/getVideoPreview?id=868846799498&idx=0&type=39&tkn=BPS7Gncux70UMJtjpr3y9ZgZt7s",
+                                  "width": 1280,
+                                  "height": 960
+                              }
+                          ],
+                          "width": 320,
+                          "height": 240,
+                          "id": 456239021,
+                          "owner_id": -31121976,
+                          "title": "Видео от Тестовая 2",
+                          "is_favorite": false,
+                          "track_code": "video_f0301c62mczCPX0mCWdgHO8OmaT2e2saKOExxbOYesTGpI3AvZGs59s6fSAJbwYd7lGtkcBJWCMY0wDCxvYR",
+                          "type": "video",
+                          "views": 1
+                      }
+                  },
+                  {
+                      "type": "audio",
+                      "audio": {
+                          "artist": "Walk Off The Earth",
+                          "id": 456244365,
+                          "owner_id": 2000043182,
+                          "title": "Natalie",
+                          "duration": 25,
+                          "is_explicit": false,
+                          "is_focus_track": false,
+                          "track_code": "11dedbd3oFDkqLqtJ8vsi3wL4zaAF_MgEst7AOSMcA8VV5C29eiaarzr-JN2lGU63_eJNow6xBg",
+                          "url": "https://vk.com/mp3/audio_api_unavailable.mp3",
+                          "date": 1645257546,
+                          "main_artists": [
+                              {
+                                  "name": "Walk Off The Earth",
+                                  "domain": "7146823924928650362",
+                                  "id": "7146823924928650362"
+                              }
+                          ],
+                          "short_videos_allowed": false,
+                          "stories_allowed": false,
+                          "stories_cover_allowed": false
+                      }
+                  }
               ],
-              "text": "Аудит доступности: основы. Как узнать, что есть проблемы, оценить критичность и начать улучшение доступности проекта. Татьяна Фокина и Василий Дудин в первой части серии про само понятие аудита доступности и как он может быть устроен.\n\nhttps://web-standards.ru/articles/a11y-audit-basics/",
-              "user_id": 100
-            }
+              "post_source": {
+                  "type": "vk"
+              }
           }
-        ],
-        "post_source": {
-          "type": "api"
-        }
-      }
-    ],
-    "can_edit": 1,
-    "created_by": 11412368,
-    "can_delete": 1,
-    "comments": {
-      "count": 0
-    },
-    "is_favorite": false,
-    "hash": "T01cPMMfACESym2z-P4x3qtLa84"
+      ],
+      "can_edit": 1,
+      "created_by": 11412368,
+      "can_delete": 1,
+      "comments": {
+          "count": 0
+      },
+      "is_favorite": false,
+      "donut": {
+          "is_donut": false
+      },
+      "short_text_rate": 0.8,
+      "hash": "ezY-EP_3tuoqjsCb8drLMII0Ako"
   },
   "group_id": 78441729,
-  "event_id": "99b2e6890a9c551ec61f4b4fdfe1c00de85bfab0",
+  "event_id": "3bd0ccf4f857ed3a56879934617fe5d2ad6f22b8",
   "secret": "law3xcx1"
 }

@@ -1,54 +1,58 @@
 {
   "type": "wall_post_new",
   "object": {
-    "id": 35,
-    "from_id": -78441729,
-    "owner_id": -78441729,
-    "date": 1643996222,
-    "marked_as_ads": 0,
-    "post_type": "post",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "signer_id": 11412368,
-    "can_edit": 1,
-    "created_by": 11412368,
-    "can_delete": 1,
-    "attachments": [
-      {
-        "type": "doc",
-        "doc": {
-          "id": 533704291,
-          "owner_id": 11412368,
-          "title": "Реклама на ремонт.docx",
-          "size": 5186,
-          "ext": "docx",
-          "date": 1580093797,
-          "type": 1,
-          "url": "https://vk.com/doc11412368_533704291?hash=48e0d9c2844e2ee10a&dl=GEYTIMJSGM3DQ:1643996222:b0507bcb26ac3acfdd&api=1&no_preview=1",
-          "access_key": "b5238817abb3324444"
-        }
+      "id": 62,
+      "from_id": -78441729,
+      "owner_id": -78441729,
+      "date": 1645247979,
+      "marked_as_ads": 0,
+      "post_type": "post",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "can_edit": 1,
+      "created_by": 11412368,
+      "can_delete": 1,
+      "attachments": [
+          {
+              "type": "doc",
+              "doc": {
+                  "id": 627716662,
+                  "owner_id": 11412368,
+                  "title": "Untitled 1.pdf",
+                  "size": 1148,
+                  "ext": "pdf",
+                  "date": 1645247970,
+                  "type": 1,
+                  "url": "https://vk.com/doc11412368_627716662?hash=464f6763992415547b&dl=GEYTIMJSGM3DQ:1645247979:93491981ec88beb7e3&api=1&no_preview=1",
+                  "access_key": "47a0e59354ffa84c13"
+              }
+          },
+          {
+              "type": "doc",
+              "doc": {
+                  "id": 627716663,
+                  "owner_id": 11412368,
+                  "title": "Untitled 1.odt",
+                  "size": 7902,
+                  "ext": "odt",
+                  "date": 1645247970,
+                  "type": 1,
+                  "url": "https://vk.com/doc11412368_627716663?hash=00b2d46cab5db09cd4&dl=GEYTIMJSGM3DQ:1645247979:7b9485945faaa5fab0&api=1&no_preview=1",
+                  "access_key": "02cb4283c2fe5f520a"
+              }
+          }
+      ],
+      "comments": {
+          "count": 0
       },
-      {
-        "type": "doc",
-        "doc": {
-          "id": 626401418,
-          "owner_id": 11412368,
-          "title": "dotnet-install.sh",
-          "size": 54544,
-          "ext": "sh",
-          "date": 1643996215,
-          "type": 8,
-          "url": "https://vk.com/doc11412368_626401418?hash=6152d3e74d5accdf0d&dl=GEYTIMJSGM3DQ:1643996222:42b6dfe35a35642b2d&api=1&no_preview=1",
-          "access_key": "b0b9b6914c91d20f5c"
-        }
-      }
-    ],
-    "comments": {
-      "count": 0
-    },
-    "is_favorite": false,
-    "hash": "G9yb94amuYrzJvO-4nVbEzuaed8"
+      "is_favorite": false,
+      "donut": {
+          "is_donut": false
+      },
+      "short_text_rate": 0.8,
+      "carousel_offset": 0,
+      "hash": "ELCy0BHBtVW9sX80xfwojoAfcx8"
   },
   "group_id": 78441729,
-  "event_id": "933b7ed2ffd09e04710d0f2f211462d889f7185f",
+  "event_id": "85823a9e7f3e4a393cc0471ee9868860040deaaa",
   "secret": "law3xcx1"
 }

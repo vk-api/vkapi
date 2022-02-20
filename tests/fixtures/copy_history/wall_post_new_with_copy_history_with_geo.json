@@ -1,0 +1,51 @@
+{
+  "type": "wall_post_new",
+  "object": {
+      "id": 25,
+      "from_id": -31121976,
+      "owner_id": -31121976,
+      "date": 1644592857,
+      "marked_as_ads": 0,
+      "post_type": "post",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "copy_history": [
+          {
+              "id": 56,
+              "owner_id": -78441729,
+              "from_id": -78441729,
+              "date": 1644592842,
+              "post_type": "post",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "geo": {
+                  "type": "point",
+                  "coordinates": "55.197931498271 61.345694350838",
+                  "place": {
+                      "id": 0,
+                      "title": "3-я Херсонская улица, Челябинск",
+                      "latitude": 0,
+                      "longitude": 0,
+                      "created": 0,
+                      "icon": "https://vk.com/images/places/place.png",
+                      "country": "Россия",
+                      "city": "Челябинск"
+                  },
+                  "showmap": 1
+              },
+              "post_source": {
+                  "type": "vk"
+              }
+          }
+      ],
+      "can_edit": 1,
+      "created_by": 11412368,
+      "can_delete": 1,
+      "comments": {
+          "count": 0
+      },
+      "is_favorite": false,
+      "hash": "8roWJtocDu70kEpzGmFW2b5VQ4Q"
+  },
+  "group_id": 31121976,
+  "event_id": "0b947c514542eb1d4dab136b57a7a00d3a0a3282",
+  "secret": "law3xcx2"
+}

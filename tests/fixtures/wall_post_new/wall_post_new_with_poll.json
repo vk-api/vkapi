@@ -1,86 +1,66 @@
 {
   "type": "wall_post_new",
   "object": {
-    "id": 37,
-    "from_id": -78441729,
-    "owner_id": -78441729,
-    "date": 1643996510,
-    "marked_as_ads": 0,
-    "post_type": "post",
-    "text": "ves) и /usr/bin/php является символической ссылкой (sym (alternatives) и /usr/bin/php является символической сс",
-    "signer_id": 11412368,
-    "can_edit": 1,
-    "created_by": 11412368,
-    "can_delete": 1,
-    "attachments": [
-      {
-        "type": "poll",
-        "poll": {
-          "multiple": false,
-          "end_date": 0,
-          "closed": false,
-          "is_board": false,
-          "can_edit": true,
-          "can_vote": true,
-          "can_report": false,
-          "can_share": true,
-          "created": 1643996510,
-          "id": 686710041,
-          "owner_id": -78441729,
-          "question": "we",
-          "votes": 0,
-          "disable_unvote": false,
-          "anonymous": false,
-          "answer_ids": [],
-          "embed_hash": "686710041_15b107b4fd663bf484",
-          "answers": [
-            {
-              "id": 1953967222,
-              "rate": 0,
-              "text": "q",
-              "votes": 0
-            },
-            {
-              "id": 1953967223,
-              "rate": 0,
-              "text": "qeqeqe",
-              "votes": 0
-            },
-            {
-              "id": 1953967224,
-              "rate": 0,
-              "text": "q",
-              "votes": 0
-            }
-          ],
-          "author_id": -78441729,
-          "background": {
-            "angle": 225,
-            "color": "6248cb",
-            "id": 1,
-            "name": "фон в тёплых тонах",
-            "points": [
-              {
-                "color": "f24973",
-                "position": 0
-              },
-              {
-                "color": "3948e6",
-                "position": 1
+      "id": 65,
+      "from_id": -78441729,
+      "owner_id": -78441729,
+      "date": 1645250121,
+      "marked_as_ads": 0,
+      "post_type": "post",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "can_edit": 1,
+      "created_by": 11412368,
+      "can_delete": 1,
+      "attachments": [
+          {
+              "type": "poll",
+              "poll": {
+                  "multiple": true,
+                  "end_date": 1645336440,
+                  "closed": false,
+                  "is_board": false,
+                  "can_edit": true,
+                  "can_vote": true,
+                  "can_report": false,
+                  "can_share": true,
+                  "created": 1645250121,
+                  "id": 691795406,
+                  "owner_id": -78441729,
+                  "question": "Lorem ipsum dolor sit amet",
+                  "votes": 0,
+                  "disable_unvote": true,
+                  "anonymous": true,
+                  "answer_ids": [],
+                  "embed_hash": "691795406_1bd0edadbc2c0a5cf4",
+                  "answers": [
+                      {
+                          "id": 1965967976,
+                          "rate": 0,
+                          "text": "consectetur adipiscing elit",
+                          "votes": 0
+                      },
+                      {
+                          "id": 1965967977,
+                          "rate": 0,
+                          "text": "sed do eiusmod tempor",
+                          "votes": 0
+                      }
+                  ],
+                  "author_id": -78441729
               }
-            ],
-            "type": "gradient"
           }
-        }
-      }
-    ],
-    "comments": {
-      "count": 0
-    },
-    "is_favorite": false,
-    "hash": "6gchzz0Sam5iIUwT8NtBJ4ma-us"
+      ],
+      "comments": {
+          "count": 0
+      },
+      "is_favorite": false,
+      "donut": {
+          "is_donut": false
+      },
+      "short_text_rate": 0.8,
+      "hash": "Cjm3YezlAOLjMDroqmdxeAgKkAI"
   },
   "group_id": 78441729,
-  "event_id": "940821a86885a7df0d03431c9c5c459a39597488",
+  "event_id": "4ca718088a18a566883647e3a9edb4cef0d1cea8",
   "secret": "law3xcx1"
 }
