@@ -16,9 +16,6 @@ cu:
 da:
 	composer dump-autoload
 
-in:
-	php public/index.php
-
 c:
 	php public/comments.php
 
