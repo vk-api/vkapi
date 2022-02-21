@@ -2,11 +2,11 @@
 
 namespace Vkapi\events\event;
 
-use function Vkapi\parser\{getValue};
+use function Vkapi\parser\{getValue, rejectEmptyValues};
 
 function doc($data)
 {
-    return [
+    $array = [
         "type" => getValue($data, ['type']),
         "id" => getValue($data, ['doc', 'id']),
         "owner_id" => getValue($data, ['doc', 'owner_id']),
@@ -18,4 +18,6 @@ function doc($data)
         "url" => getValue($data, ['doc', 'url']),
         "access_key" => getValue($data, ['doc', 'access_key']),
     ];
+
+    return rejectEmptyValues($array);
 }

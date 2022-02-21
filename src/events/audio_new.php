@@ -2,11 +2,11 @@
 
 namespace Vkapi\events\event;
 
-use function Vkapi\parser\{getValue};
+use function Vkapi\parser\{getValue, rejectEmptyValues};
 
 function audio_new($data)
 {
-    return [
+    $array = [
         "type" => getValue($data, ["type"]),
         "id" => getValue($data, ["audio", "id"]),
         "owner_id" => getValue($data, ["audio", "owner_id"]),
@@ -20,4 +20,6 @@ function audio_new($data)
         "date" => getValue($data, ["audio", "date"]),
         "is_hq" => getValue($data, ["audio", "is_hq"])
     ];
+
+    return rejectEmptyValues($array);
 }
