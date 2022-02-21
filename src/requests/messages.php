@@ -2,7 +2,7 @@
 
 namespace Vkapi\requests\messages;
 
-function messagesSend($chat_id, $message, $access_token, $v)
+function buildRequestMessagesSend($chat_id, $message, $access_token, $v)
 {
     $request_params = array(
         'chat_id' => $chat_id,  //$_ENV['CHAT_ID']
