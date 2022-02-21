@@ -2,15 +2,12 @@
 
 namespace Vkapi\build\buildvalues;
 
-use function Vkapi\parser\getPlayer;
-use function Vkapi\parsers\object\getText;
-
-function buildVkVideoUrls($response)
+function buildVideoUrl($response)
 {
     if ($response == []) {
         return '';
     }
 
-    $result = json_decode($response);
-    return getPlayer($result);
+    $result = json_decode($response, true);
+    return $result['response']['items'][0]['player'];
 }

@@ -2,14 +2,13 @@
 
 namespace Vkapi\build\buildvalues;
 
-use function Vkapi\parser\getPlayer;
-use function Vkapi\parsers\object\getText;
+use function Vkapi\parser\getValue;
 
 function buildHashTags($data)
 {
     $separator = ' ';
-    $getText = getText($data);
-    $stripTags = strip_tags($getText);
+    $text = getValue($data, ['object', 'text']);
+    $stripTags = strip_tags($text);
     $strReplaced = str_replace(array("\r", "\n", "\r\n", "\n\r"), $separator, $stripTags);
     $exploded = explode($separator, $strReplaced);
     $filtered = array_filter($exploded, fn ($item) => stristr($item, '#'));
