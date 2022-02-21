@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Knst\\Vkapi\\": "src/"
+      "Vkapi\\": "src/"
     },
     "files": [
       "src/readinput.php",
@@ -30,6 +30,9 @@
       "src/events/entities/link.php",
       "src/events/entities/poll.php",
       "src/events/entities/doc.php",
+      "src/events/entities/audio.php",
+      "src/events/entities/video.php",
+      "src/events/entities/photo.php",
 
       "src/parser/parser.php",
       
@@ -37,9 +40,7 @@
       "src/requests/users.php",
       "src/requests/video.php",
       
-      "src/responses/messages.php",
-      "src/responses/users.php",
-      "src/responses/video.php"
+      "src/response/response.php"
     ]
   },
   "authors": [

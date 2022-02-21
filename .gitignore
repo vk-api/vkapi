@@ -1,4 +1,4 @@
 /vendor/
 .env
-.env.dev
-.know.txt
+.todo
+.editorconfig
