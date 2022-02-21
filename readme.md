@@ -7,11 +7,12 @@
 
 Установка в проект
 
-composer require zharinov/vkapi
-make install
+`composer require zharinov/vkapi`
+
+`make install`
 
 После инсталляции создайте файл .env по образцу .env.example.
 
-В директории /public вы найдете несколько кейсов.
+В директории `/public` вы найдете несколько кейсов.
 
-Подробнее смотрите в [wiki](wiki)
+Подробнее смотрите в [wiki](https://github.com/zharinovkv/vkapi/wiki)
