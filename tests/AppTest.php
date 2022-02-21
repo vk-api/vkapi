@@ -6,7 +6,6 @@ use PHPUnit\Framework\TestCase;
 
 use function Vkapi\readinput\readInput;
 use function Vkapi\events\event\{confirmation};
-use function Vkapi\env\setEnv;
 
 class AppTest extends TestCase
 {
@@ -22,7 +21,6 @@ class AppTest extends TestCase
 
     public function additionProviderConfirmation()
     {
-        setEnv();
         return [
             "confirmation" => [
                 "/fixtures/confirmation.json", '5e52c648',
@@ -33,9 +31,9 @@ class AppTest extends TestCase
                         'confirmation' => 'asdasdasdas'
                     ],
                     [
-                        'group_id' => $_ENV["GROUP_ID"],
-                        'secret' => $_ENV["SECRET"],
-                        'confirmation' => $_ENV["CONFIRMATION_TOKEN"]
+                        'group_id' => 78441729,
+                        'secret' => 'law3xcx1',
+                        'confirmation' => '5e52c648'
                     ]
                 ]
             ],
