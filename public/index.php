@@ -11,15 +11,12 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-\Vkapi\env\setEnv();
+use function \Vkapi\env\setEnv;
+use function \Vkapi\readinput\readInput;
+use function \Vkapi\parser\getValue;
 
-// $data = readInput(dirname('php://input');
-
-$data = \Vkapi\readinput\readInput(dirname(__DIR__, 1) . '/tests/fixtures/entities/video_new.json');
-//var_export($data);
-
-$type = \Vkapi\parser\getValue($data, ['type']);
-$event = "Vkapi\\events\\event\\{$type}";
-$result = $event($data);
-
-var_export($result);
+setEnv();
+// $data =  readInput('php://input');
+// $type = getValue($data, ['type']);
+// $event = "\\Vkapi\\events\\event\\{$type}";
+// $result = $event($data);
