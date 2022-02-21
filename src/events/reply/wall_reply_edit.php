@@ -2,12 +2,11 @@
 
 namespace Vkapi\events\event;
 
-use function Vkapi\parser\{getAttachments, getValue};
+use function Vkapi\parser\{getValue, getAttachments, rejectEmptyValues};
 
 function wall_reply_edit($data)
 {
-    return [
-
+    $array = [
         'type' => getValue($data, ['type']),
         'id' => getValue($data, ['object', 'id']),
         'from_id' => getValue($data, ['object', 'from_id']),
@@ -15,17 +14,18 @@ function wall_reply_edit($data)
         'text' => getValue($data, ['object', 'text']),
         'post_id' => getValue($data, ['object', 'post_id']),
         'owner_id' => getValue($data, ['object', 'owner_id']),
-        //'parents_stack' => getValue($data, ['object', 'parents_stack']),
-        "audio" => getAttachments($data, "audio"),
-        "video" => getAttachments($data, "video"),
-        "photo" => getAttachments($data, 'photo'),
+        'parents_stack' => getValue($data, ['object', 'parents_stack']),
+        "audio" => getAttachments($data, "audio", ['object', 'attachments']),
+        "video" => getAttachments($data, "video", ['object', 'attachments']),
+        "photo" => getAttachments($data, 'photo', ['object', 'attachments']),
         "geo" => getValue($data, ['object', 'geo']),
-        "poll" => getAttachments($data, 'poll'),
-        "link" => getAttachments($data, 'link'),
-        //'thread' => getValue($data, ['object', 'thread']),
+        "poll" => getAttachments($data, 'poll', ['object', 'attachments']),
+        "link" => getAttachments($data, 'link', ['object', 'attachments']),
+        'thread' => getValue($data, ['object', 'thread']),
         'post_owner_id' => getValue($data, ['object', 'post_owner_id']),
         'group_id' => getValue($data, ['object', 'group_id']),
         'event_id' => getValue($data, ['object', 'event_id']),
         'secret' => getValue($data, ['secret']),
     ];
+    return rejectEmptyValues($array);
 }

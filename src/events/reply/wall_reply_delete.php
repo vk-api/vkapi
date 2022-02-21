@@ -2,11 +2,11 @@
 
 namespace Vkapi\events\event;
 
-use function Vkapi\parser\{getValue};
+use function Vkapi\parser\{getValue, rejectEmptyValues};
 
 function wall_reply_delete($data)
 {
-    return [
+    $array = [
         'type' => getValue($data, ['type']),
         'owner_id' => getValue($data, ['object', 'owner_id']),
         'id' => getValue($data, ['object', 'id']),
@@ -16,4 +16,5 @@ function wall_reply_delete($data)
         'event_id' => getValue($data, ['event_id']),
         'secret' => getValue($data, ['secret']),
     ];
+    return rejectEmptyValues($array);
 }
