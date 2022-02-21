@@ -2,26 +2,32 @@
 
 namespace Vkapi\parser;
 
-function getValue($data, $index)
+function getValue(array $data, array $index)
 {
     if (!isset($data[$index[0]])) {
         return '';
     }
 
-    if (is_array($data[$index[0]])) {
-        return getValue($data[array_shift($index)], $index);
+    if (count($index) >= 2) {
+        $indexFirst = array_shift($index);
+        return getValue($data[$indexFirst], $index);
     }
 
     return $data[$index[0]];
 }
 
-function getAttachments($data, $pattern)
+function getAttachments(array $data, string $pattern, array $index = ['object', 'attachments'])
 {
-    if (!isset($data['object']['attachments'])) {
+    if (!isset($data[$index[0]])) {
         return [];
     }
 
-    $filtered = array_filter($data['object']['attachments'], function ($item) use ($pattern) {
+    if (count($index) >= 2) {
+        $indexFirst = array_shift($index);
+        return getAttachments($data[$indexFirst], $pattern, $index);
+    }
+
+    $filtered = array_filter($data[$index[0]], function ($item) use ($pattern) {
         if (getValue($item, ['type']) == $pattern) {
             return $item;
         }
@@ -29,56 +35,59 @@ function getAttachments($data, $pattern)
 
     $mapped = array_map(function ($item) {
         $type = getValue($item, ['type']);
-        $postfix = ($type == 'link' || $type == 'poll' || $type == 'geo' || $type == 'doc') ? '' : '_new';
-        $event = "Vkapi\\events\\event\\{$type}{$postfix}";
-        $result = $event($item);
-        return $result;
+        $event = "Vkapi\\events\\event\\{$type}";
+        return $event($item);
     }, $filtered);
 
     return $mapped;
 }
 
-function getPhotoOrFirstFrame($data, $pattern)
+function getImage(array $data, string $pattern = 'sizes')
 {
-    $type = $data['type'] == 'video' ? 'video' : 'object';
-
-    $filtered = array_filter($data[$type], function ($item) use ($pattern) {
-        if (str_starts_with($item, $pattern) == true) {
-            return $item;
+    if (!isset($data[$pattern])) {
+        foreach ($data as &$value) {
+            if (is_array($value)) {
+                return getImage($value, $pattern);
+            }
         }
-    }, ARRAY_FILTER_USE_KEY);
+        return;
+    }
 
-    return array_pop($filtered);
-}
-
-function getSizes($data)
-{
-    $type = $data['type'] == 'photo' ? 'photo' : 'object';
-
-    $reduced = array_reduce($data[$type]['sizes'], function ($acc, $item) {
+    $reduced = array_reduce($data[$pattern], function ($acc, $item) {
         return $item['width'] > $acc['width'] ? $item : $acc;
-    }, $data[$type]['sizes'][0]);
+    }, $data[$pattern][0]);
 
     return $reduced['url'];
 }
 
-function getGeo($data)
+function getGeo(array $data, array $index = ['object', 'geo'])
 {
-    if (!isset($data['object']['geo'])) {
+    if (!isset($data[$index[0]])) {
         return [];
     }
 
+    if (count($index) >= 2) {
+        $indexFirst = array_shift($index);
+        return getGeo($data[$indexFirst], $index);
+    }
+
     return [
-        'type' => getValue($data, ['object', 'geo', 'type']),
-        'coordinates' => getValue($data, ['object', 'geo', 'coordinates']),
-        "id" => getValue($data, ['object', 'geo', 'place', 'id']),
-        "title" => getValue($data, ['object', 'geo', 'place', 'title']),
-        "latitude" => getValue($data, ['object', 'geo', 'place', 'latitude']),
-        "longitude" => getValue($data, ['object', 'geo', 'place', 'longitude']),
-        "created" => getValue($data, ['object', 'geo', 'place', 'created']),
-        "icon" => getValue($data, ['object', 'geo', 'place', 'icon']),
-        "country" => getValue($data, ['object', 'geo', 'place', 'country']),
-        "city" => getValue($data, ['object', 'geo', 'place', 'city']),
-        'showmap' => getValue($data, ['object', 'geo', 'showmap']),
+        'type' => getValue($data, ['geo', 'type']),
+        'coordinates' => getValue($data, ['geo', 'coordinates']),
+        "id" => getValue($data, ['geo', 'place', 'id']),
+        "title" => getValue($data, ['geo', 'place', 'title']),
+        "latitude" => getValue($data, ['geo', 'place', 'latitude']),
+        "longitude" => getValue($data, ['geo', 'place', 'longitude']),
+        "created" => getValue($data, ['geo', 'place', 'created']),
+        "icon" => getValue($data, ['geo', 'place', 'icon']),
+        "country" => getValue($data, ['geo', 'place', 'country']),
+        "city" => getValue($data, ['geo', 'place', 'city']),
+        'showmap' => getValue($data, ['geo', 'showmap']),
     ];
+}
+
+function rejectEmptyValues(array $array)
+{
+    $collection = collect($array);
+    return $collection->filter()->all();
 }
