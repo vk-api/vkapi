@@ -1,5 +1,5 @@
 {
-  "name": "knst/vkapi",
+  "name": "zharinov/vkapi",
   "description": "PHP library for VK API",
   "type": "library",
   "license": "MIT",
@@ -62,8 +62,5 @@
   "require-dev": {
     "squizlabs/php_codesniffer": "*",
     "phpunit/phpunit": "^9.5"
-  },
-  "config": {
-    "disable-tls": false
   }
 }
