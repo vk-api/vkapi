@@ -33,13 +33,11 @@ function getAttachments(array $data, string $pattern, array $index = ['object', 
         }
     });
 
-    $mapped = array_map(function ($item) {
+    return array_map(function ($item) {
         $type = getValue($item, ['type']);
         $event = "Vkapi\\events\\event\\{$type}";
         return $event($item);
     }, $filtered);
-
-    return $mapped;
 }
 
 function getImage(array $data, string $pattern = 'sizes')
